@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 368127 */
+  src: url('//at.alicdn.com/t/font_4tq4nw9xzna8m2t9.eot');
+  src: url('//at.alicdn.com/t/font_4tq4nw9xzna8m2t9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_4tq4nw9xzna8m2t9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_4tq4nw9xzna8m2t9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_4tq4nw9xzna8m2t9.svg#iconfont') format('svg');
+}
+
+main {
+  width: 800px;
+  margin: 20px auto;
+}
+
+/*header开始*/
+header {
+  display: flex;
+}
+header .logo {
+  padding: 20px;
+}
+header .logo img {
+  border-radius: 50%;
+}
+header .name {
+  line-height: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+header .name h1 {
+  font-size: 48px;
+}
+header .contacts {
+  flex: 1;
+  line-height: .5em;
+}
+header .contacts h3 {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 3px solid;
+}
+header .contacts span {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+}
+/*header结束*/
+
+/*content开始*/
+.content {
+  margin: 20px auto;
+}
+.content h2 {
+  width: 50%;
+}
+.content .section {
+  padding-left: 40px;
+  border-top: 1px solid transparent;
+  border-radius: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 2px solid #000;
+  line-height: 1em;
+}
+.content .section h3:first-child {
+  margin-top: 0;
+}
+.content .section p:last-child {
+  margin-bottom: 0;
+}
+.content .section h3:before {
+  content: " ";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  top: -1px;
+  left: -46px;
+}
+.content .section h3 {
+  position: relative;
+}
+.content .section .grey {
+  color: #bbb;
+}
+/*content结束*/
+
+/*info开始*/
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info .extra {
+  width: 50%;
+}
+.info .skill {
+  width: 40%;
+}
+.info .skill ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 240px;
+}
+.info .skill ul li {
+  height: 80px;
+}
+.info ul li::before {
+  font-family: 'iconfont';
+  content: "\e600";
+  display: inline-block;
+  position: absolute;
+  left: -25px;
+}
+.info ul li {
+  position: relative;
+  list-style: none;
+}
+.content h2::after,
+.info h3::after {
+  content: " ";
+  display: block;
+  border: 2px solid #bbb;
+}
